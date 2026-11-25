@@ -118,3 +118,5 @@ deploy/nginx.conf            Nginx site config: serves client/dist, proxies /api
 - TLS termination (Certbot or an ALB) in front of the EC2 instance
 - Restrict server-side CORS to the deployed domain (low risk today since the API only listens on `127.0.0.1` and Nginx proxies same-origin)
 - Automate steps 2–3 and 7 with a provisioning script or config management tool, since the GitHub Actions workflow only handles the repeatable parts (pull, build, migrate, reload)
+
+
